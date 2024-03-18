@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Movie 회원가입 페이지</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0 auto;
+            border: none;
+
+        }
+        body {
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .signup {
+            width: 500px; height: 700px;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+        .signup > h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #8129e0;
+            margin-bottom: 6px;
+        }
+        .signup > h3 {
+            font-size: 18px;
+            font-weight: 800;
+            color: #8129e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup">
+        <h2>회원가입</h2>
+        <h3>가입을 통해 더 다양한 서비스를 이용해보세요!</h3>
+        <form id="signup-form">
+            <input type="text" name="userID" placeholder="아이디 입력 (6-20자)">
+            <input type="password" name="userPassword" placeholder="비밀번호 입력 (문자, 숫자, 특수문자 포함 8-20자)">
+            <input type="password" name="userPassword-check" placeholder="비밀번호 재입력">
+            <input type="text" name="email" placeholder="이메일 주소">
+            <section>
+                <option>naver.com</option>
+                <option>gmail.com</option>
+                <option>hanmail.net</option>
+                <option>직접 입력</option>
+            </section>
+            <input type="date" name="hbd">
+            <input type="number" name="phoneNumber" placeholder="휴대폰 번호 입력 ('-' 제외 11자리 입력)">
+            <input type="submit" value="가입하기">
+        </form>
+    </div>
+</body>
+</html>
